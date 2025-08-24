@@ -47,18 +47,16 @@
       <h1 id="title">A better way to run employee evaluations</h1>
       <p class="lead">Create, assign, and analyse assessments — with clean UX and thoughtful automation. We’re polishing the first release.</p>
 
-      <form name="waitlist" method="post" data-analytics="waitlist">
+      <!-- Formspree integration -->
+      <form
+        action="https://formspree.io/f/xeoljjbr"
+        method="POST"
+      >
         <input type="email" name="email" placeholder="you@company.com" autocomplete="email" required />
         <button type="submit">Join the waitlist</button>
       </form>
+
       <p class="meta">No spam. We’ll email you only when something meaningful ships.</p>
     </main>
-    <script>
-      // Optional: send to your form tool later; temporarily prevent reload
-      document.forms.waitlist?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thanks! We’ll be in touch soon.');
-      });
-    </script>
   </body>
 </html>
